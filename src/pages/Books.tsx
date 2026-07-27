@@ -52,7 +52,7 @@ const books: Book[] = [
     title: 'Thinking in Bets',
     author: 'Annie Duke',
     comment:
-      'Changed how I see uncertainty and make decisions. Its best advice: treat decisions as bets and challenge binary right-or-wrong thinking, use outcomes as opportunities to learn, and welcome dissent to seek information rather than good results.',
+      "Changed how I see uncertainty and make decisions. Its best advice: 1. Treat decisions as bets and challenge binary right-or-wrong thinking. 2. Use outcomes as opportunities to learn. 3. Welcome dissent to seek information rather than good results. 4. Focus on what we can control, and don't complain about luck.",
     topics: ['self-improvement'],
   },
 ];
