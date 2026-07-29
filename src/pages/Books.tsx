@@ -182,7 +182,7 @@ function BookCard({
       transition={cardTransition}
       whileHover={reduceMotion ? undefined : { y: -2 }}
     >
-      <h2 className="break-words text-xl font-medium leading-snug text-[var(--ink)]">
+      <h2 className="break-words font-hand text-2xl font-normal leading-snug text-[var(--ink)]">
         {Array.isArray(book.title)
           ? book.title.map((title, index) => (
               <span key={title} className="block">
@@ -209,7 +209,7 @@ function BookCard({
         <p className="mb-1 font-mono text-xs uppercase tracking-[0.16em] text-[var(--ink-faint)]">
           My Comment
         </p>
-        <p className="font-hand text-lg leading-relaxed text-[var(--ink-muted)]">{book.comment}</p>
+        <p className="leading-relaxed text-[var(--ink-muted)]">{book.comment}</p>
       </div>
     </motion.article>
   );

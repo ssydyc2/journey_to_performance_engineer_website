@@ -808,7 +808,7 @@ function StructuredBlogPostDetail({ post }: { post: BlogPost }) {
       <BlogPostVisual postId={post.id} />
       <header className="border-b border-[var(--rule-strong)] pb-8">
         <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--ink-faint)]">{post.eyebrow}</p>
-        <h1 className="mt-3 font-serif text-4xl font-normal leading-tight text-[var(--ink)]">{post.title}</h1>
+        <h1 className="mt-3 font-hand text-4xl font-normal leading-tight text-[var(--ink)]">{post.title}</h1>
         <p className="mt-4 text-lg leading-8 text-[var(--ink-muted)]">{post.summary}</p>
 
         <nav aria-label="Blog post sections" className="mt-6 flex flex-wrap gap-x-5 gap-y-2 font-mono text-xs text-[var(--ink-faint)]">
@@ -966,7 +966,7 @@ function BlogPostIndex({ posts }: { posts: BlogPost[] }) {
                     id={titleId}
                     role="heading"
                     aria-level={2}
-                    className="blog-post-title block font-serif text-2xl font-normal leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]"
+                    className="blog-post-title block font-hand text-2xl font-normal leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]"
                   >
                     {post.title}
                   </span>
