@@ -916,7 +916,7 @@ function BlogPostIndex({ posts }: { posts: BlogPost[] }) {
       <header>
         <BlogHeroScene />
         <div className="flex items-center gap-3">
-          <h1 className="font-serif text-4xl font-normal leading-tight text-[var(--ink)] sm:text-5xl">Blog</h1>
+          <h1 className="font-hand text-4xl font-normal leading-tight text-[var(--ink)] sm:text-5xl">Blog</h1>
           <ThemeToggle />
         </div>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--ink-muted)]">

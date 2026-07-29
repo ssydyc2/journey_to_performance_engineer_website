@@ -21,7 +21,7 @@ export default function Layout() {
             </Link>
             <div>
               <div className="flex items-center gap-3">
-                <h1 className="font-serif text-4xl font-normal tracking-tight text-[var(--ink)] sm:text-5xl">
+                <h1 className="font-hand text-4xl font-normal tracking-tight text-[var(--ink)] sm:text-5xl">
                   Siyuan Song
                 </h1>
                 <ThemeToggle className="mt-1" />
@@ -38,7 +38,7 @@ export default function Layout() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `rpg-nav__item font-mono text-xs uppercase tracking-[0.18em] transition-colors ${
+                `rpg-nav__item font-hand text-base transition-colors ${
                   isActive
                     ? 'text-[var(--accent)]'
                     : 'text-[var(--ink-muted)] hover:text-[var(--ink)]'
@@ -50,7 +50,7 @@ export default function Layout() {
             <NavLink
               to="/reading-list"
               className={({ isActive }) =>
-                `rpg-nav__item font-mono text-xs uppercase tracking-[0.18em] transition-colors ${
+                `rpg-nav__item font-hand text-base transition-colors ${
                   isActive
                     ? 'text-[var(--accent)]'
                     : 'text-[var(--ink-muted)] hover:text-[var(--ink)]'
@@ -62,7 +62,7 @@ export default function Layout() {
             <NavLink
               to="/blog"
               className={({ isActive }) =>
-                `rpg-nav__item font-mono text-xs uppercase tracking-[0.18em] transition-colors ${
+                `rpg-nav__item font-hand text-base transition-colors ${
                   isActive
                     ? 'text-[var(--accent)]'
                     : 'text-[var(--ink-muted)] hover:text-[var(--ink)]'
