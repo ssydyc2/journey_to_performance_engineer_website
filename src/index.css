@@ -20,6 +20,7 @@
   --secondary-accent-soft: #e5f3fc;
   --rpg-shadow: color-mix(in srgb, var(--ink) 16%, transparent);
   --rpg-title-font: Georgia, 'Times New Roman', 'Noto Serif', serif;
+  --hand-font: 'Kalam', cursive;
   --rpg-menu-font: 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace;
   --page-background-top: #fbf8f1;
   --page-background-base: #f7f3ea;
@@ -84,6 +85,10 @@ body {
 .font-serif {
   font-family: var(--rpg-title-font);
   letter-spacing: -0.018em;
+}
+
+.font-hand {
+  font-family: var(--hand-font);
 }
 
 .font-mono {

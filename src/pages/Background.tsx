@@ -359,7 +359,7 @@ export default function Background() {
         <div className="text-center mb-8">
           <AboutHeroScene isVisible={isVisible} />
           <h1
-            className="rpg-page-title mb-2 font-serif text-3xl font-normal text-[var(--ink)]"
+            className="rpg-page-title mb-2 font-hand text-3xl font-normal text-[var(--ink)]"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(-20px)',

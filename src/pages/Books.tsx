@@ -209,7 +209,7 @@ function BookCard({
         <p className="mb-1 font-mono text-xs uppercase tracking-[0.16em] text-[var(--ink-faint)]">
           My Comment
         </p>
-        <p className="leading-relaxed text-[var(--ink-muted)]">{book.comment}</p>
+        <p className="font-hand text-lg leading-relaxed text-[var(--ink-muted)]">{book.comment}</p>
       </div>
     </motion.article>
   );
@@ -227,7 +227,7 @@ export default function Books() {
     <div className="space-y-8">
       <header>
         <ReadingHeroScene />
-        <h1 className="rpg-page-title font-serif text-3xl font-normal text-[var(--ink)]">Reading List</h1>
+        <h1 className="rpg-page-title font-hand text-3xl font-normal text-[var(--ink)]">Reading List</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--ink-muted)]">
           A personal shelf for self-improvement, wealth, and happiness.
         </p>
