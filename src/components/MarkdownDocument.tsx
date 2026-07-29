@@ -588,7 +588,7 @@ function MarkdownBlock({ block, leanRegions }: { block: Block; leanRegions: Map<
 
     if (block.level === 1) {
       return (
-        <h1 id={headingId} className="mb-5 scroll-mt-8 border-b border-[var(--rule-strong)] pb-5 font-serif text-4xl font-normal leading-tight text-[var(--ink)]">
+        <h1 id={headingId} className="mb-5 scroll-mt-8 border-b border-[var(--rule-strong)] pb-5 font-hand text-4xl font-normal leading-tight text-[var(--ink)]">
           {content}
         </h1>
       );
