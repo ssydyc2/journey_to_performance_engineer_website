@@ -266,15 +266,15 @@ const phases: Phase[] = [
   {
     title: 'Practice & Further Reading',
     period: 'Practice',
-    summary: 'Connect starter exercises, advanced lessons, and further reading with code.',
+    summary: 'Practice on GRPO/Reasoning, then advanced lessons and further reading with code.',
     groups: [
       {
-        title: 'Hands-On Starter Exercises',
+        title: '4A: Practice on GRPO/Reasoning',
         resources: [
           {
             title: 'Unsloth - Train Your Own R1 Reasoning Model with GRPO',
             href: 'https://unsloth.ai/blog/r1-reasoning',
-            meta: 'Beginner-friendly experiment path',
+            meta: 'Beginner-friendly GRPO',
             notes: [
               'End-to-end GRPO on consumer hardware with Colab notebooks.',
               'Supports Llama 3.1 8B, Qwen 2.5, and Phi-4 with QLoRA.',
@@ -300,29 +300,6 @@ const phases: Phase[] = [
             ],
           },
           {
-            title: 'DPO Alignment with TRL',
-            href: 'https://www.philschmid.de/dpo-align-llms-in-2024-with-trl',
-            meta: 'Philipp Schmid',
-            notes: [
-              'End-to-end DPO walkthrough covering data, quantization, LoRA training, and evaluation.',
-              'Clean alignment tutorial with transferable evaluation methodology.',
-            ],
-          },
-        ],
-      },
-      {
-        title: 'Advanced Lessons',
-        resources: [
-          {
-            title: 'HuggingFace Open-R1: Update #1',
-            href: 'https://huggingface.co/blog/open-r1/update-1',
-            meta: 'GRPO at scale',
-            notes: [
-              'Lessons from replicating DeepSeek-R1 with GRPO via TRL.',
-              'Covers vLLM scaling, GPU memory pressure, long reasoning outputs, and generation strategy.',
-            ],
-          },
-          {
             title: 'Training for Reasoning with GRPO',
             href: 'https://pub.towardsai.net/training-your-reasoning-model-with-grpo-a-practical-guide-for-vlms-post-training-with-trl-266411c0b844',
             meta: 'Towards AI',
@@ -343,8 +320,17 @@ const phases: Phase[] = [
         ],
       },
       {
-        title: 'Further Reading & Code',
+        title: '4B: Advanced Lessons & Further Reading',
         resources: [
+          {
+            title: 'HuggingFace Open-R1: Update #1',
+            href: 'https://huggingface.co/blog/open-r1/update-1',
+            meta: 'GRPO at scale',
+            notes: [
+              'Lessons from replicating DeepSeek-R1 with GRPO via TRL.',
+              'Covers vLLM scaling, GPU memory pressure, long reasoning outputs, and generation strategy.',
+            ],
+          },
           {
             title: 'RLHF Book',
             href: 'https://rlhfbook.com/',
@@ -395,12 +381,8 @@ const frameworkRows = [
 ];
 
 const practicePath = [
-  'Unsloth GRPO tutorial - first hands-on experiment',
-  'TinyZero on veRL - reproduce R1-Zero and bridge to production frameworks',
-  "Pramodith's GRPO blog - understand what the trainer does",
-  'DPO Alignment with TRL - practice a clean non-RL alignment path',
-  'Open-R1 Update #1 - learn scaling lessons before multi-GPU work',
-  "Raschka's overview - place the exercises in the broader reasoning-model landscape",
+  '4A Practice on GRPO/Reasoning: Unsloth, TinyZero, Pramodith, Towards AI, Raschka',
+  '4B: Open-R1 scaling lessons, RLHF Book / Interconnects, then verl or OpenRLHF source',
 ];
 
 const minimalPath = [
