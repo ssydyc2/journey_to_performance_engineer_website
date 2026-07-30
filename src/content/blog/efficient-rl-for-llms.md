@@ -8,7 +8,7 @@ A structured guide for learning RLHF/RL systems and algorithms for LLM alignment
 - [Phase 1: Algorithm Foundations](#phase-1-algorithm-foundations) — read PPO/RLHF, DPO, and GRPO before systems papers.
 - [Phase 2: RLHF Framework Theory & Systems Design](#phase-2-rlhf-framework-theory-systems-design) — study RLHF framework theory and systems-design tradeoffs.
 - [Phase 3: Popular RLHF/RL Post-Training Frameworks](#phase-3-popular-rlhfrl-post-training-frameworks) — compare the top current frameworks by visibility and practical relevance.
-- [Phase 4: Practice & Further Reading](#phase-4-practice-further-reading) — turn the map into starter exercises, advanced lessons, and further reading/code.
+- [Phase 4: Practice & Further Reading](#phase-4-practice-further-reading) — practice on GRPO/Reasoning, then advanced lessons and further reading/code.
 
 ---
 
@@ -281,7 +281,7 @@ This list is ranked by current visibility plus practical relevance: stars, activ
 
 Use this section to move from reading papers to actually training, debugging, and reading real RL post-training systems.
 
-### 4A: Hands-On Starter Exercises
+### 4A: Practice on GRPO/Reasoning
 
 - **[Unsloth — Train Your Own R1 Reasoning Model with GRPO](https://unsloth.ai/blog/r1-reasoning)** ([step-by-step tutorial](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/tutorial-train-your-own-reasoning-model-with-grpo))
   - End-to-end GRPO on consumer hardware — Colab notebooks included
@@ -301,17 +301,6 @@ Use this section to move from reading papers to actually training, debugging, an
   - Non-obvious insight: why μ=1 gives zero policy loss but training still works via non-zero gradients
   - *Best resource for understanding what GRPOTrainer does under the hood*
 
-- **[DPO Alignment with TRL — Philipp Schmid](https://www.philschmid.de/dpo-align-llms-in-2024-with-trl)**
-  - End-to-end DPO walkthrough: dataset formatting, quantization, LoRA training, MT-Bench evaluation with GPT-4 as judge
-  - *Cleanest alignment tutorial — transferable evaluation methodology*
-
-### 4B: Advanced Lessons
-
-- **[HuggingFace Open-R1: Update #1](https://huggingface.co/blog/open-r1/update-1)**
-  - Documents HuggingFace's attempt to replicate DeepSeek-R1 with GRPO via TRL
-  - Hard-won infra lessons: scaling vLLM from 2→4 nodes of 8xH100s, GPU memory challenges with 6k–20k token reasoning outputs, batched vs streaming generation
-  - *Gold-standard "lessons learned" post for GRPO at scale*
-
 - **[Training for Reasoning with GRPO (Towards AI)](https://pub.towardsai.net/training-your-reasoning-model-with-grpo-a-practical-guide-for-vlms-post-training-with-trl-266411c0b844)** ([Part II](https://medium.com/@lucamassaron/training-for-reasoning-with-grpo-part-ii-a-step-by-step-explanation-f80c219e2059))
   - GRPO post-training guide with a focus on Vision-Language Models
   - Part II: step-by-step training loop explanation
@@ -322,7 +311,12 @@ Use this section to move from reading papers to actually training, debugging, an
   - Practical cost comparisons: Sky-T1 ~$450, TinyZero under $30
   - *Use it to place GRPO practice inside the broader reasoning-model landscape*
 
-### 4C: Further Reading & Code
+### 4B: Advanced Lessons & Further Reading
+
+- **[HuggingFace Open-R1: Update #1](https://huggingface.co/blog/open-r1/update-1)**
+  - Documents HuggingFace's attempt to replicate DeepSeek-R1 with GRPO via TRL
+  - Hard-won infra lessons: scaling vLLM from 2→4 nodes of 8xH100s, GPU memory challenges with 6k–20k token reasoning outputs, batched vs streaming generation
+  - *Gold-standard "lessons learned" post for GRPO at scale*
 
 - **[RLHF Book — Nathan Lambert](https://rlhfbook.com/)**
   - Free online book covering the full RLHF pipeline end-to-end
