@@ -5,9 +5,9 @@ import aboutRpgBackground960 from '../assets/hero/about-rpg-background-v5-960w.w
 import aboutRpgBackground1440 from '../assets/hero/about-rpg-background-v5-1440w.webp';
 import blogEnchantedPageStrip from '../assets/hero/blog-enchanted-page-strip-v1.webp';
 import blogChibiCastStrip from '../assets/hero/blog-chibi-cast-strip-v2.webp';
-import blogMageBackground from '../assets/hero/blog-mage-background-v2.webp';
-import blogMageBackground960 from '../assets/hero/blog-mage-background-v2-960w.webp';
-import blogMageBackground1440 from '../assets/hero/blog-mage-background-v2-1440w.webp';
+import blogMageBackground from '../assets/hero/blog-mage-background-v3.webp';
+import blogMageBackground960 from '../assets/hero/blog-mage-background-v3-960w.webp';
+import blogMageBackground1440 from '../assets/hero/blog-mage-background-v3-1440w.webp';
 import readingArchiveFolio from '../assets/hero/reading-archive-folio.webp';
 import readingArchiveUnfoldStrip from '../assets/hero/reading-archive-unfold-strip.webp';
 import readingRpgBackground from '../assets/hero/reading-rpg-background-v3.webp';
