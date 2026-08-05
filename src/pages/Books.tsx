@@ -8,6 +8,7 @@ type ReadingFilter = 'all' | ReadingTopic;
 interface Book {
   id: string;
   title: string | string[];
+  titleZh: string | string[];
   author: string;
   comment: string;
   topics: ReadingTopic[];
@@ -20,6 +21,7 @@ const books: Book[] = [
   {
     id: 'almanack-of-naval-ravikant',
     title: 'The Almanack of Naval Ravikant: A Guide to Wealth and Happiness',
+    titleZh: '纳瓦尔宝典',
     author: 'Eric Jorgenson',
     comment: 'Must read for how to build wealth (on specific knowledge) and happiness',
     topics: ['wealth', 'happiness'],
@@ -27,6 +29,7 @@ const books: Book[] = [
   {
     id: 'the-psychology-of-money',
     title: 'The Psychology of Money',
+    titleZh: '金钱心理学',
     author: 'Morgan Housel',
     comment: 'Must read on how to keep wealth.',
     topics: ['wealth'],
@@ -34,6 +37,7 @@ const books: Book[] = [
   {
     id: 'the-courage-to-be-disliked-and-happy',
     title: ['The Courage to Be Disliked', 'The Courage to Be Happy'],
+    titleZh: ['被讨厌的勇气', '幸福的勇气'],
     author: 'Ichiro Kishimi and Fumitake Koga',
     comment:
       'Unlike traditional psychology, which emphasizes childhood and the past, these two books emphasize the present and the courage to choose happiness.',
@@ -42,6 +46,7 @@ const books: Book[] = [
   {
     id: 'how-to-read-a-book',
     title: 'How to Read a Book',
+    titleZh: '如何阅读一本书',
     author: 'Mortimer J. Adler and Charles Van Doren',
     comment:
       'Must-read for reading books well, with innovative four levels of reading and a focus on active reading.',
@@ -50,6 +55,7 @@ const books: Book[] = [
   {
     id: 'thinking-in-bets',
     title: 'Thinking in Bets',
+    titleZh: '高胜算决策',
     author: 'Annie Duke',
     comment:
       "Changed how I see uncertainty and make decisions. Its best advice: 1. Treat decisions as bets and challenge binary right-or-wrong thinking. 2. Use outcomes as opportunities to learn. 3. Welcome dissent to seek information rather than good results. 4. Focus on what we can control, and don't complain about luck.",
@@ -184,13 +190,33 @@ function BookCard({
     >
       <h2 className="break-words font-hand text-2xl font-normal leading-snug text-[var(--ink)]">
         {Array.isArray(book.title)
-          ? book.title.map((title, index) => (
-              <span key={title} className="block">
-                {title}
-                {index < book.title.length - 1 ? ' ' : ''}
-              </span>
-            ))
-          : book.title}
+          ? book.title.map((title, index) => {
+              const titleZh = Array.isArray(book.titleZh) ? book.titleZh[index] : undefined;
+
+              return (
+                <span key={title} className={index > 0 ? 'mt-3 block' : 'block'}>
+                  <span className="block">{title}</span>
+                  {titleZh ? (
+                    <span
+                      lang="zh"
+                      className="mt-1 block text-xl leading-snug text-[var(--ink-soft)]"
+                    >
+                      {titleZh}
+                    </span>
+                  ) : null}
+                </span>
+              );
+            })
+          : (
+            <>
+              <span className="block">{book.title}</span>
+              {typeof book.titleZh === 'string' ? (
+                <span lang="zh" className="mt-1 block text-xl leading-snug text-[var(--ink-soft)]">
+                  {book.titleZh}
+                </span>
+              ) : null}
+            </>
+          )}
       </h2>
       <p className="mt-2 font-mono text-xs uppercase tracking-[0.16em] text-[var(--ink-faint)]">
         By {book.author}

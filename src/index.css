@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Ma Shan Zheng';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/ma-shan-zheng-titles.woff2') format('woff2');
+}
+
 :root {
   --paper: #f7f3ea;
   --paper-elevated: #fffdf7;
@@ -20,7 +28,7 @@
   --secondary-accent-soft: #e5f3fc;
   --rpg-shadow: color-mix(in srgb, var(--ink) 16%, transparent);
   --rpg-title-font: Georgia, 'Times New Roman', 'Noto Serif', serif;
-  --hand-font: 'Kalam', cursive;
+  --hand-font: 'Kalam', 'Ma Shan Zheng', cursive;
   --rpg-menu-font: 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace;
   --page-background-top: #fbf8f1;
   --page-background-base: #f7f3ea;
