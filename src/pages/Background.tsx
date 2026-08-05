@@ -240,7 +240,7 @@ function TimelineCard({
             </div>
 
             {/* Title & Company */}
-            <h3 className="mb-0.5 max-w-[calc(100%-3.75rem)] whitespace-pre-line text-base font-semibold text-[var(--ink)]">{item.title}</h3>
+            <h3 className="mb-0.5 max-w-[calc(100%-3.75rem)] whitespace-pre-line font-hand text-lg font-normal leading-snug text-[var(--ink)]">{item.title}</h3>
             {item.company && (
               <p className="mb-1 font-mono text-xs text-[var(--accent)]">{item.company}</p>
             )}
