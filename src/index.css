@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Subset of Ma Shan Zheng covering Chinese titles and the header name. */
 @font-face {
   font-family: 'Ma Shan Zheng';
   font-style: normal;
@@ -28,7 +29,7 @@
   --secondary-accent-soft: #e5f3fc;
   --rpg-shadow: color-mix(in srgb, var(--ink) 16%, transparent);
   --rpg-title-font: Georgia, 'Times New Roman', 'Noto Serif', serif;
-  --hand-font: 'Kalam', 'Ma Shan Zheng', cursive;
+  --hand-font: 'Kalam', 'Ma Shan Zheng', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', cursive;
   --rpg-menu-font: 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace;
   --page-background-top: #fbf8f1;
   --page-background-base: #f7f3ea;
