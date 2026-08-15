@@ -61,6 +61,15 @@ const books: Book[] = [
       "Changed how I see uncertainty and make decisions. Its best advice: 1. Treat decisions as bets and challenge binary right-or-wrong thinking. 2. Use outcomes as opportunities to learn. 3. Welcome dissent to seek information rather than good results. 4. Focus on what we can control, and don't complain about luck.",
     topics: ['self-improvement'],
   },
+  {
+    id: 'the-happiness-trap',
+    title: 'The Happiness Trap',
+    titleZh: '幸福的陷阱',
+    author: 'Tal Ben-Shahar',
+    comment:
+      'This is an introductory book on ACT: how to find your values and live a values-oriented life instead of being influenced by emotions.',
+    topics: ['self-improvement', 'happiness'],
+  },
 ];
 
 function ReadingHeroScene() {
