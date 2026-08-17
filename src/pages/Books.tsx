@@ -65,10 +65,10 @@ const books: Book[] = [
     id: 'the-happiness-trap',
     title: 'The Happiness Trap',
     titleZh: '幸福的陷阱',
-    author: 'Tal Ben-Shahar',
+    author: 'Russ Harris',
     comment:
-      'This is an introductory book on ACT: how to find your values and live a values-oriented life instead of being influenced by emotions.',
-    topics: ['self-improvement', 'happiness'],
+      'Introductory book on ACT. Two ideas I keep: 1. Find your values and live a values-oriented life. 2. Unhook from the thinking self and emotions so you can pursue your values more effectively.',
+    topics: ['happiness'],
   },
 ];
 
