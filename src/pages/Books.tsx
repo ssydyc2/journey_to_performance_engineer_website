@@ -44,15 +44,6 @@ const books: Book[] = [
     topics: ['happiness'],
   },
   {
-    id: 'how-to-read-a-book',
-    title: 'How to Read a Book',
-    titleZh: '如何阅读一本书',
-    author: 'Mortimer J. Adler and Charles Van Doren',
-    comment:
-      'Must-read for reading books well, with innovative four levels of reading and a focus on active reading.',
-    topics: ['self-improvement'],
-  },
-  {
     id: 'thinking-in-bets',
     title: 'Thinking in Bets',
     titleZh: '高胜算决策',
@@ -67,7 +58,7 @@ const books: Book[] = [
     titleZh: '幸福的陷阱',
     author: 'Russ Harris',
     comment:
-      'Introductory book on ACT. Two ideas I keep: 1. Find your values and live a values-oriented life. 2. Unhook from the thinking self and emotions so you can pursue your values more effectively.',
+      'Introductory book on ACT. Three ideas I keep: 1. Find your values and live a values-oriented life. 2. Be present: focus on now and on the next thing to do, not the story in your head. 3. Open up and unhook from negative thoughts, rather than fighting or obeying them.',
     topics: ['happiness'],
   },
 ];
