@@ -15,36 +15,20 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    period: "2025 - Present",
+    period: "2022 - Present",
     title: "Software Engineer, Machine Learning",
     company: "Meta Inc.",
     icon: "ai",
-    description: "On the AI Platform team, working on LLM inference and training supporting other teams, especially for TPU.",
-    tags: ["LLM", "Infra", "Performance Optimization"]
+    description: "Machine learning for ads, LLMs, and AI safety at MSL.",
+    tags: ["Ads", "LLM", "AI Safety"]
   },
   {
-    period: "2022 - 2025",
-    title: "Software Engineer, Machine Learning",
-    company: "Meta Inc.",
-    icon: "ads",
-    description: "Trained and deployed machine learning models for users' languages, advertiser's subsidy and ads notifications that are running in Meta's ads systems",
-    tags: ["ML Systems", "Ads"]
-  },
-  {
-    period: "2020 - 2022",
+    period: "2018 - 2022",
     title: "Machine Learning Engineer",
     company: "Snap Inc.",
     icon: "ml",
-    description: "Developed machine learning models for friend recommendations and notification optimization, directly impacting user engagement and retention.",
-    tags: ["ML Systems", "Recommendation Systems"]
-  },
-  {
-    period: "2018 - 2020",
-    title: "Software Engineer, Infrastructure",
-    company: "Snap Inc.",
-    icon: "network",
-    description: "Built service mesh infrastructure powering real-time communication for hundreds of millions of users.",
-    tags: ["Distributed Systems", "Infrastructure"]
+    description: "Built ML models for friending ranking and notification ranking systems.",
+    tags: ["ML Systems", "Ranking Systems"]
   },
   {
     period: "2013 - 2018",
