@@ -61,6 +61,15 @@ const books: Book[] = [
       'Introductory book on ACT. Three ideas I keep: 1. Find your values and live a values-oriented life. 2. Be present: focus on now and on the next thing to do, not the story in your head. 3. Open up and unhook from negative thoughts, rather than fighting or obeying them.',
     topics: ['happiness'],
   },
+  {
+    id: 'essentialism',
+    title: 'Essentialism: The Disciplined Pursuit of Less',
+    titleZh: '精要主义',
+    author: 'Greg McKeown',
+    comment:
+      'A book that teaches us how to explore, eliminate, and execute. Six ideas I keep: 1. Most things in life are noise; a few efforts have 100x or 1000x impact. 2. Only take top-10% opportunities: set three minimum criteria and three extreme criteria, and require passing at least two of the three extreme ones. 3. Build in buffers when executing. 4. Improve step by step. 5. Focus on what is essential and stay present. 6. Enjoy the process and treat execution as play.',
+    topics: ['self-improvement'],
+  },
 ];
 
 function ReadingHeroScene() {
