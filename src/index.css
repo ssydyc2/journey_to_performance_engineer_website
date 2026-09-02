@@ -9,6 +9,15 @@
   src: url('./assets/fonts/ma-shan-zheng-titles.woff2') format('woff2');
 }
 
+/* Subset of YanShi YouRan XiaoKai covering the header name and reading-list book titles. */
+@font-face {
+  font-family: 'YouRan XiaoKai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/you-ran-xiao-kai-titles.woff2') format('woff2');
+}
+
 :root {
   --paper: #f7f3ea;
   --paper-elevated: #fffdf7;
@@ -30,6 +39,7 @@
   --rpg-shadow: color-mix(in srgb, var(--ink) 16%, transparent);
   --rpg-title-font: Georgia, 'Times New Roman', 'Noto Serif', serif;
   --hand-font: 'Kalam', 'Ma Shan Zheng', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', cursive;
+  --hand-font-zh: 'Kalam', 'YouRan XiaoKai', 'Kaiti SC', 'STKaiti', 'KaiTi', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', cursive;
   --rpg-menu-font: 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace;
   --page-background-top: #fbf8f1;
   --page-background-base: #f7f3ea;
@@ -98,6 +108,10 @@ body {
 
 .font-hand {
   font-family: var(--hand-font);
+}
+
+.font-hand-zh {
+  font-family: var(--hand-font-zh);
 }
 
 .font-mono {

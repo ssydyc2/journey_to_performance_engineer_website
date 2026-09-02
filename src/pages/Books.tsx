@@ -197,7 +197,7 @@ function BookCard({
       transition={cardTransition}
       whileHover={reduceMotion ? undefined : { y: -2 }}
     >
-      <h2 className="break-words font-hand text-2xl font-normal leading-snug text-[var(--ink)]">
+      <h2 className="break-words font-hand-zh text-2xl font-normal leading-snug text-[var(--ink)]">
         {Array.isArray(book.title)
           ? book.title.map((title, index) => {
               const titleZh = Array.isArray(book.titleZh) ? book.titleZh[index] : undefined;

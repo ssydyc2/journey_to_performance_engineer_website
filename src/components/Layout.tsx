@@ -28,7 +28,7 @@ export default function Layout() {
               </div>
               <div className="mt-3 flex items-center gap-4">
                 <div className="h-px w-12 bg-[var(--rule-strong)] sm:w-14"></div>
-                <span lang="zh" className="font-hand text-2xl font-normal text-[var(--ink-muted)] sm:text-3xl">
+                <span lang="zh" className="font-hand-zh text-2xl font-normal text-[var(--ink-muted)] sm:text-3xl">
                   宋思源
                 </span>
               </div>
