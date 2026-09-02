@@ -208,7 +208,7 @@ function BookCard({
                   {titleZh ? (
                     <span
                       lang="zh"
-                      className="mt-1 block text-xl leading-snug text-[var(--ink-soft)]"
+                      className="mt-1 block text-2xl leading-snug text-[var(--ink-soft)] sm:text-3xl"
                     >
                       {titleZh}
                     </span>
@@ -220,7 +220,7 @@ function BookCard({
             <>
               <span className="block">{book.title}</span>
               {typeof book.titleZh === 'string' ? (
-                <span lang="zh" className="mt-1 block text-xl leading-snug text-[var(--ink-soft)]">
+                <span lang="zh" className="mt-1 block text-2xl leading-snug text-[var(--ink-soft)] sm:text-3xl">
                   {book.titleZh}
                 </span>
               ) : null}
